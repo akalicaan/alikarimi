@@ -36,24 +36,26 @@
         .lang-fa { color: blue; }
         .lang-en { color: purple; }
         .phone-number { direction: ltr; display: inline-block; }
-
-        .profile-image img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #ccc;
-            margin-bottom: 20px;
+        .whatsapp-button {
+            display: inline-block;
+            padding: 10px 15px;
+            background: linear-gradient(45deg, #ffeb3b, #f44336, #4caf50);
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+        .whatsapp-link:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+        }
+        .phone-number { direction: ltr; display: inline-block; }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Profil Resmi -->
-        <div class="profile-image">
-            <img src="profile.png" alt="Profil Resmi">
-        </div>
-
         <!-- Almanca -->
         <div class="language-box lang-de">
             <h2>🇩🇪 Notfall - Mein Name ist Ayaz Karimi</h2>
@@ -85,6 +87,11 @@
             <p>📞 My Father (Ali): +49 162 9859224</p>
             <p>📞 Second Number: +49 1573 5157166</p>
         </div>
+
+        <!-- WhatsApp butonu -->
+        <a class="language-box whatsapp-button" href="http://wa.me/491629859224" target="_blank">
+            🚨 Acil durum! WhatsApp'tan iletişime geç!
+        </a>
 
         <div class="qr-code">
             <img src="qr-code.png" alt="QR Code" width="200">

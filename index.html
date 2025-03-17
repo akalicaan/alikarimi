@@ -29,9 +29,9 @@
         }
         .language-box {
             margin: 20px 0;
-            padding: 15px;
+            padding: 20px;
             border-radius: 10px;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             font-weight: bold;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
@@ -40,20 +40,22 @@
             box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
         }
         .whatsapp-button, .call-button {
-            display: inline-block;
-            padding: 12px 18px;
+            display: block;
+            padding: 15px;
+            margin: 10px auto;
             color: white;
             border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
-            margin-top: 10px;
-            animation: flash 1s infinite alternate;
             font-size: 18px;
+            text-align: center;
+            width: 80%;
+            animation: flash 1s infinite alternate;
         }
         @keyframes flash {
             0% { background-color: #ffeb3b; }
-            50% { background-color: #f44336; }
-            100% { background-color: #4caf50; }
+            50% { background-color: #000000; }
+            100% { background-color: #ffeb3b; }
         }
     </style>
 </head>
@@ -66,34 +68,34 @@
         
         <!-- Almanca -->
         <div class="language-box lang-de">
-            <h2>🇩🇪 Notfall - Mein Name ist Ayaz Karimi</h2>
-            <a class="call-button" href="tel:+491629859224">📞 Vater (Ali) anrufen</a>
+            <h2>🇩🇪 DE Deutsch</h2>
+            <p>Wenn Sie diesen QR-Code scannen, rufen Sie bitte eine dieser beiden Nummern an oder schreiben Sie per WhatsApp.</p>
+            <a class="call-button" href="tel:+491629859224">📞 Mein Vater (Ali) anrufen</a>
             <a class="call-button" href="tel:+4915735157166">📞 Zweite Nummer anrufen</a>
-            <a class="whatsapp-button" href="http://wa.me/491629859224" target="_blank">📲 WhatsApp kontaktieren</a>
         </div>
 
         <!-- Türkçe -->
         <div class="language-box lang-tr">
-            <h2>🇹🇷 Acil Durum - İsmim Ayaz Karimi</h2>
+            <h2>🇹🇷 TR Türkçe</h2>
+            <p>Bu QR kodu taratıyorsanız lütfen bu iki numaradan birini arayın ya da WhatsApp üzerinden yazın.</p>
             <a class="call-button" href="tel:+491629859224">📞 Babamı Ara (Ali)</a>
             <a class="call-button" href="tel:+4915735157166">📞 İkinci Numarayı Ara</a>
-            <a class="whatsapp-button" href="http://wa.me/491629859224" target="_blank">📲 WhatsApp ile iletişime geç</a>
         </div>
 
         <!-- Farsça -->
         <div class="language-box lang-fa">
-            <h2>🇮🇷 وضعیت اضطراری - نام من آیاز کریمی است</h2>
+            <h2>🇮🇷 IR فارسی</h2>
+            <p>اگر این کد را اسکن می‌کنید، لطفاً با یکی از این دو شماره تماس بگیرید یا از طریق واتساپ پیام بدهید.</p>
             <a class="call-button" href="tel:+491629859224">📞 تماس با پدرم (علی)</a>
             <a class="call-button" href="tel:+4915735157166">📞 تماس با شماره دوم</a>
-            <a class="whatsapp-button" href="http://wa.me/491629859224" target="_blank">📲 تماس با واتساپ</a>
         </div>
 
         <!-- İngilizce -->
         <div class="language-box lang-en">
-            <h2>🇬🇧 Emergency - My Name is Ayaz Karimi</h2>
+            <h2>🇬🇧 EN English</h2>
+            <p>If you scan this QR code, please call one of these two numbers or write via WhatsApp.</p>
             <a class="call-button" href="tel:+491629859224">📞 Call My Father (Ali)</a>
             <a class="call-button" href="tel:+4915735157166">📞 Call Second Number</a>
-            <a class="whatsapp-button" href="http://wa.me/491629859224" target="_blank">📲 Contact via WhatsApp</a>
         </div>
     </div>
 </body>

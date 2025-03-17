@@ -1,47 +1,80 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>İletişim Bilgilerim</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ayaz - Acil Durum</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
+      background-color: #f8f9fa;
       margin: 0;
-      padding: 20px;
+      padding: 0;
+      text-align: center;
     }
     .container {
       max-width: 600px;
-      margin: 0 auto;
-      background: #fff;
+      margin: 40px auto;
       padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
     }
     h1 {
-      text-align: center;
-      color: #333;
+      margin-bottom: 20px;
+    }
+    .qr-code {
+      margin: 20px 0;
+    }
+    /* Farklı diller için farklı renkler */
+    .lang-tr {
+      color: #d32f2f; /* Kırmızı tonları */
+    }
+    .lang-de {
+      color: #388e3c; /* Yeşil tonları */
+    }
+    .lang-fa {
+      color: #1976d2; /* Mavi tonları */
     }
     .contact-info {
-      margin: 20px 0;
+      margin-top: 20px;
+      font-weight: bold;
     }
     .contact-info p {
       margin: 10px 0;
-      font-size: 1.1em;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>İletişim Bilgilerim</h1>
-    <div class="contact-info">
-      <p><strong>Ad:</strong> Ali Karimi</p>
-      <p><strong>Email:</strong> ornek@mail.com</p>
-      <p><strong>Telefon:</strong> 0123456789</p>
-      <p><strong>Adres:</strong> Örnek Mah. No: 123, İstanbul</p>
+    <h1>İsmim Ayaz</h1>
+    <p>Bu QR kodu taratıyorsanız lütfen Babama ya da Annemi arayın veya WhatsApp üzerinden yazın.</p>
+    
+    <!-- Türkçe Metin -->
+    <div class="lang-tr">
+      <p><strong>Türkçe:</strong></p>
+      <p>Babam: Ali : +49 162 9859224</p>
+      <p>Annem: Raziye : +49 1573 5157166</p>
     </div>
-    <p>Herhangi bir acil durumda, QR kodu tarayarak bu bilgilere ulaşabilirsiniz.</p>
+
+    <!-- Almanca Metin -->
+    <div class="lang-de">
+      <p><strong>Deutsch:</strong></p>
+      <p>Mein Vater (Ali): +49 162 9859224</p>
+      <p>Meine Mutter (Raziye): +49 1573 5157166</p>
+    </div>
+
+    <!-- Farsça Metin -->
+    <div class="lang-fa">
+      <p><strong>فارسی:</strong></p>
+      <p>پدرم (علی): ‎+49 162 9859224</p>
+      <p>مادرم (راضیه): ‎+49 1573 5157166</p>
+    </div>
+
+    <div class="qr-code">
+      <!-- QR kodunu buraya ekle (örneğin <img src=\"qr-code.png\" alt=\"QR Code\" width=\"200\" />) -->
+      <img src="qr-code.png" alt="QR Code" width="200" />
+    </div>
   </div>
 </body>
 </html>

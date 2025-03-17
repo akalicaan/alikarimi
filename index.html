@@ -27,52 +27,50 @@
       margin: 20px 0;
     }
     /* Farklı diller için farklı renkler */
-    .lang-tr {
-      color: #d32f2f; /* Kırmızı tonları */
-    }
     .lang-de {
       color: #388e3c; /* Yeşil tonları */
+    }
+    .lang-tr {
+      color: #d32f2f; /* Kırmızı tonları */
     }
     .lang-fa {
       color: #1976d2; /* Mavi tonları */
     }
-    .contact-info {
-      margin-top: 20px;
-      font-weight: bold;
-    }
-    .contact-info p {
-      margin: 10px 0;
+    p {
+      margin: 8px 0;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>İsmim Ayaz</h1>
-    <p>Bu QR kodu taratıyorsanız lütfen Babama ya da Annemi arayın veya WhatsApp üzerinden yazın.</p>
-    
-    <!-- Türkçe Metin -->
-    <div class="lang-tr">
-      <p><strong>Türkçe:</strong></p>
-      <p>Babam: Ali : +49 162 9859224</p>
-      <p>Annem: Raziye : +49 1573 5157166</p>
-    </div>
 
     <!-- Almanca Metin -->
     <div class="lang-de">
       <p><strong>Deutsch:</strong></p>
+      <p>Wenn Sie diesen QR-Code scannen, rufen Sie bitte eine dieser beiden Nummern an oder schreiben Sie per WhatsApp.</p>
       <p>Mein Vater (Ali): +49 162 9859224</p>
-      <p>Meine Mutter (Raziye): +49 1573 5157166</p>
+      <p>Zweite Nummer: +49 1573 5157166</p>
+    </div>
+
+    <!-- Türkçe Metin -->
+    <div class="lang-tr">
+      <p><strong>Türkçe:</strong></p>
+      <p>Bu QR kodu taratıyorsanız lütfen bu iki numaradan birini arayın ya da WhatsApp üzerinden yazın.</p>
+      <p>Babam (Ali): +49 162 9859224</p>
+      <p>İkinci Numara: +49 1573 5157166</p>
     </div>
 
     <!-- Farsça Metin -->
     <div class="lang-fa">
       <p><strong>فارسی:</strong></p>
-      <p>پدرم (علی): ‎+49 162 9859224</p>
-      <p>مادرم (راضیه): ‎+49 1573 5157166</p>
+      <p>اگر این کد QR را اسکن می‌کنید، لطفاً با یکی از این دو شماره تماس بگیرید یا از طریق واتساپ پیام بدهید.</p>
+      <p>پدرم (علی): +49 162 9859224</p>
+      <p>شماره دوم: +49 1573 5157166</p>
     </div>
 
+    <!-- QR Kod Görseli -->
     <div class="qr-code">
-      <!-- QR kodunu buraya ekle (örneğin <img src=\"qr-code.png\" alt=\"QR Code\" width=\"200\" />) -->
       <img src="qr-code.png" alt="QR Code" width="200" />
     </div>
   </div>

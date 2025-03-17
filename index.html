@@ -5,28 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ayaz - Acil Durum</title>
   <style>
+    /* Sayfa genel ayarları */
     body {
       font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
+      /* Gradyan arkaplan (daha belirgin renk geçişi) */
+      background: linear-gradient(135deg, #ffefba, #ffffff);
       margin: 0;
       padding: 0;
       text-align: center;
     }
+    /* Ana kapsayıcı */
     .container {
-      max-width: 600px;
+      max-width: 700px;
       margin: 40px auto;
       padding: 20px;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+    /* Başlıklar ve paragraflar için kalın yazı */
+    h1, p, h2 {
+      font-weight: bold;
+      margin: 8px 0;
     }
     h1 {
       margin-bottom: 20px;
+      font-size: 28px;
     }
-    .qr-code {
+    /* Dil kutucukları (her dil ayrı bir pencere) */
+    .language-box {
+      background: rgba(255, 255, 255, 0.8);
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
       margin: 20px 0;
+      text-align: center;
     }
-    /* Farklı diller için farklı renkler */
+    /* Farklı diller için renk kodu */
     .lang-de {
       color: #388e3c; /* Yeşil tonları */
     }
@@ -36,8 +48,9 @@
     .lang-fa {
       color: #1976d2; /* Mavi tonları */
     }
-    p {
-      margin: 8px 0;
+    /* QR kod resmi */
+    .qr-code {
+      margin-top: 30px;
     }
   </style>
 </head>
@@ -45,31 +58,31 @@
   <div class="container">
     <h1>İsmim Ayaz</h1>
 
-    <!-- Almanca Metin -->
-    <div class="lang-de">
-      <p><strong>Deutsch:</strong></p>
+    <!-- Almanca Kutu -->
+    <div class="language-box lang-de">
+      <h2>🇩🇪 Deutsch</h2>
       <p>Wenn Sie diesen QR-Code scannen, rufen Sie bitte eine dieser beiden Nummern an oder schreiben Sie per WhatsApp.</p>
-      <p>Mein Vater (Ali): +49 162 9859224</p>
-      <p>Zweite Nummer: +49 1573 5157166</p>
+      <p>Mein Vater (Ali): 📞 +49 162 9859224</p>
+      <p>Zweite Nummer: 📞 +49 1573 5157166</p>
     </div>
 
-    <!-- Türkçe Metin -->
-    <div class="lang-tr">
-      <p><strong>Türkçe:</strong></p>
+    <!-- Türkçe Kutu -->
+    <div class="language-box lang-tr">
+      <h2>🇹🇷 Türkçe</h2>
       <p>Bu QR kodu taratıyorsanız lütfen bu iki numaradan birini arayın ya da WhatsApp üzerinden yazın.</p>
-      <p>Babam (Ali): +49 162 9859224</p>
-      <p>İkinci Numara: +49 1573 5157166</p>
+      <p>Babam (Ali): 📞 +49 162 9859224</p>
+      <p>İkinci Numara: 📞 +49 1573 5157166</p>
     </div>
 
-    <!-- Farsça Metin -->
-    <div class="lang-fa">
-      <p><strong>فارسی:</strong></p>
-      <p>اگر این کد QR را اسکن می‌کنید، لطفاً با یکی از این دو شماره تماس بگیرید یا از طریق واتساپ پیام بدهید.</p>
-      <p>پدرم (علی): +49 162 9859224</p>
-      <p>شماره دوم: +49 1573 5157166</p>
+    <!-- Farsça Kutu -->
+    <div class="language-box lang-fa">
+      <h2>🇮🇷 فارسی</h2>
+      <p>اگر این کد را اسکن می‌کنید، لطفاً با یکی از این دو شماره تماس بگیرید یا از طریق واتساپ پیام بدهید.</p>
+      <p>پدرم (علی): 📞 <span dir=\"ltr\">+۴۹ ۱۶۲ ۹۸۵۹۲۲۴</span></p>
+      <p>شماره دوم: 📞 <span dir=\"ltr\">+۴۹ ۱۵۷۳ ۵۱۵۷۱۶۶</span></p>
     </div>
 
-    <!-- QR Kod Görseli -->
+    <!-- QR Kod Görseli (yazı kaldırıldı) -->
     <div class="qr-code">
       <img src="qr-code.png" alt="QR Code" width="200" />
     </div>

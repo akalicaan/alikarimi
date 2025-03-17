@@ -31,70 +31,28 @@
             transform: scale(1.05);
             box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
         }
-        .lang-de { color: green; }
-        .lang-tr { color: red; }
-        .lang-fa { color: blue; }
-        .lang-en { color: purple; }
-        .phone-number { direction: ltr; display: inline-block; }
         .whatsapp-button {
             display: inline-block;
             padding: 10px 15px;
-            background: linear-gradient(45deg, #ffeb3b, #f44336, #4caf50);
             color: white;
             border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
-            margin-top: 20px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 10px;
+            animation: flash 1s infinite alternate;
         }
-        .whatsapp-link:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+        @keyframes flash {
+            0% { background-color: #ffeb3b; }
+            50% { background-color: #f44336; }
+            100% { background-color: #4caf50; }
         }
-        .phone-number { direction: ltr; display: inline-block; }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Almanca -->
-        <div class="language-box lang-de">
-            <h2>🇩🇪 Notfall - Mein Name ist Ayaz Karimi</h2>
-            <p>Wenn Sie diesen QR-Code scannen, rufen Sie bitte eine dieser beiden Nummern an oder schreiben Sie per WhatsApp.</p>
-            <p>📞 Mein Vater (Ali): +49 162 9859224</p>
-            <p>📞 Zweite Nummer: +49 1573 5157166</p>
-        </div>
-
-        <!-- Türkçe -->
         <div class="language-box lang-tr">
             <h2>🇹🇷 Acil Durum - İsmim Ayaz Karimi</h2>
-            <p>Bu QR kodu taratıyorsanız lütfen bu iki numaradan birini arayın ya da WhatsApp üzerinden yazın.</p>
-            <p>📞 Babam (Ali): +49 162 9859224</p>
-            <p>📞 İkinci Numara: +49 1573 5157166</p>
-        </div>
-
-        <!-- Farsça -->
-        <div class="language-box lang-fa">
-            <h2>🇮🇷 وضعیت اضطراری - نام من آیاز کریمی است</h2>
-            <p>اگر این کد را اسکن می‌کنید، لطفاً با یکی از این دو شماره تماس بگیرید یا از طریق واتساپ پیام بدهید.</p>
-            <p>📞 پدرم (علی): <span dir="ltr">+۴۹ ۱۶۲ ۹۸۵۹۲۲۴</span></p>
-            <p>📞 شماره دوم: <span dir="ltr">+۴۹ ۱۵۷۳ ۵۱۵۷۱۶۶</span></p>
-        </div>
-
-        <!-- İngilizce Metin -->
-        <div class="language-box lang-en">
-            <h2>🇬🇧 Emergency - My Name is Ayaz Karimi</h2>
-            <p>If you scan this QR code, please call one of these two numbers or write via WhatsApp.</p>
-            <p>📞 My Father (Ali): +49 162 9859224</p>
-            <p>📞 Second Number: +49 1573 5157166</p>
-        </div>
-
-        <!-- WhatsApp butonu -->
-        <a class="language-box whatsapp-button" href="http://wa.me/491629859224" target="_blank">
-            🚨 Acil durum! WhatsApp'tan iletişime geç!
-        </a>
-
-        <div class="qr-code">
-            <img src="qr-code.png" alt="QR Code" width="200">
+            <a class="whatsapp-button" href="http://wa.me/491629859224" target="_blank">📲 WhatsApp ile iletişime geç</a>
         </div>
     </div>
 </body>

@@ -12,7 +12,7 @@
             background: linear-gradient(135deg, #f0f4c3, #f8f9fa);
         }
         .container {
-            max-width: 600px;
+            max-width: 900px;
             margin: auto;
             padding: 20px;
             background: white;
@@ -36,10 +36,24 @@
         .lang-fa { color: blue; }
         .lang-en { color: purple; }
         .phone-number { direction: ltr; display: inline-block; }
+
+        .profile-image img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ccc;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Profil Resmi -->
+        <div class="profile-image">
+            <img src="profile.png" alt="Profil Resmi">
+        </div>
+
         <!-- Almanca -->
         <div class="language-box lang-de">
             <h2>🇩🇪 Notfall - Mein Name ist Ayaz Karimi</h2>
